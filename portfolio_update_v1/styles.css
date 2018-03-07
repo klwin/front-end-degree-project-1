@@ -57,10 +57,8 @@ a:hover {
 
 header {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
-  background-size: cover;
   overflow: hidden;
-  padding-top: 60px;
+  padding: 100px;
 }
 header {
   line-height: 1.5;
@@ -70,12 +68,52 @@ header .profile-image {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 3px solid white;
-  transition: all .5s;
+  border: 4px dotted white;
+  transition: all 0.3s;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(1.2) rotate(360deg);
 }
+
+.indexHeader {
+  background: url('images/showcase.jpg') no-repeat center ;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.resumeHeader {
+  background: url('images/resumePage.jpg') no-repeat center ;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.contactHeader {
+  background: url('images/contact.jpg') no-repeat center ;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.containerHire {
+  margin-top: 100px;
+  background: url("images/portfolioPage.jpg") no-repeat center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  font-size: 0.7rem;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.containerHire h2 {
+  margin: 50px;
+}
+
+.containerHire a {
+  border: 2px solid white;
+  padding: 1rem;
+  color: white;
+}
+
 .tag {
   background-color: #efefef;
   color: black;
@@ -86,7 +124,7 @@ header .profile-image:hover {
 } 
 .location {
   background-color: #222;
-  color: yellow;
+  color: #fff;
 }
 .card {
   margin: 30px;
@@ -96,10 +134,11 @@ header .profile-image:hover {
   background: #fff;
   border-bottom: 4px solid #ccc;
   border-radius: 6px;
+  text-align: center;
   transition: all .5s;
 }
 .card:hover {
-  border-color: #ff99ff;
+  border-color: #333;
 }
 
 ul.skills {
@@ -110,14 +149,44 @@ ul.skills {
 .skills li {
   border-radius: 6px;
   display: inline-block;
-  background: #ff9904;
-  color: white;
+  background: lightgrey;
+  color: black;
   padding: 5px 10px;
   margin: 2px;
 }
 
-.skills li:nth-child(odd) {
-  background: #0399ff;
+.skills li:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.card li {
+  list-style: none;
+}
+
+.resumeHTwo {
+  margin-bottom: 3rem;
+}
+
+.container {
+  background-color: #e5e5e5;
+  padding: 3rem;
+}
+
+.container p {
+  margin: 50px;
+  font-size: 1.2rem;
+}
+
+.container a {
+    margin-top: 3%;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+    padding: 10px;
+    background: Transparent;
+    border-color: #333;
+    border: 3px solid;
 }
 
 footer {
@@ -167,6 +236,21 @@ a.social:hover {
   clear: both;
 }
 
+.portfolioLayout img {
+  box-shadow: 10px 5px 5px grey;
+}
+
+.portfolioLayout img:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.portfolioText {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+
+
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
   
@@ -195,6 +279,21 @@ a.social:hover {
 
   main p {
     line-height: 1.6em;
+  }
+
+  .portfolioLayout {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+  }
+
+  .containerHire {
+    padding: 150px;
+    font-size: 1.2rem;
+  }
+
+  .containerHire a {
+    font-size: 1rem;
   }
 
   footer {
